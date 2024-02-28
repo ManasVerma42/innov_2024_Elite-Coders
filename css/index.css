@@ -1,0 +1,326 @@
+@import url('https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
+
+html{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow-x: hidden;
+    background: #3d1b0e;
+    color: whitesmoke;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 0rem;
+}
+/* end */
+nav{
+    padding: .5rem 2rem 1rem 2rem;
+    display: flex;
+    font-size: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+    background: transparent;
+}
+
+.nav-item{
+    padding-right: 2rem;
+}
+
+.logo img{
+    height: 3rem;
+    margin-top: 1rem;
+    object-fit: contain;
+}
+
+.nav-right{
+    display: flex;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 0 0 0 2rem;
+}
+.nav-item button{
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+    background: black;
+    padding: .5rem 1.5rem;
+    border-radius: 2rem;
+    color: white;
+}
+
+.nav-item button:hover{
+    background: white;
+    color: black;
+    transition: .5s;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+
+.header .bg-img{
+    position: absolute ;
+    height: 100%;
+    width: 100%;
+    z-index: -1000;
+    opacity:  .3;
+    border-bottom-left-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+}
+
+.hero-container{
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0 2rem 0;
+}
+
+.hero{
+    text-align: center;
+    width: 30%;
+    text-wrap: wrap;
+
+    /* background: black; */
+}
+.hero-img1, .hero-img2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img1 img{
+    height: 75%;
+    transform: rotate(-20deg);
+}
+
+.hero-img2 img{
+    height: 80%;
+    transform: rotate(15deg);
+}
+
+.hero h1{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 8rem;
+}
+
+.hero p{
+    margin-top: 1rem;
+}
+
+.hero-tagline{
+    font-size: 2rem;
+}
+.hero-info{
+    font-size: 1rem;
+}
+
+.btns{
+    margin: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.learn-more{
+  --b: 3px;
+  --s: .45em;
+  --color: #fee6e3;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 1.25rem;
+  font-family: "Kode Mono", monospace;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+}
+
+.learn-more:hover,
+.learn-more:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.learn-more:active {
+  background: var(--color);
+  color: #fff;
+}
+
+ /* Styling for the popup */
+ .popup {
+    display: none;
+    position: fixed;
+
+    flex-direction: column;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    color: black;
+    background: #fee6e3;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 2rem;
+    z-index: 10000;
+}
+
+.popup button{
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 1rem;
+    background: whitesmoke;
+    color: #3d1b0e;
+    border-radius: 1rem;
+}
+
+.popup button:hover{
+    background: #3d1b0e;
+    color: whitesmoke;
+    transition: .5s;
+}
+
+.popup video{
+    padding: 4rem 4rem 1rem;
+    height: auto;
+    width: 70rem;
+}
+
+/* Styling for the overlay */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.begin {
+  align-items: center;
+  background-color: #fee6e3;
+  border: 2px solid #111;
+  border-radius: 8px;
+  font-family: "Kode Mono", monospace;
+  color: #111;
+  cursor: pointer;
+  justify-content: center;
+  height: 4rem;
+  padding: 0 2rem;
+  font-size: 2rem;
+  max-width: 100%;
+  text-decoration: none;
+}
+
+.begin:hover{
+    background: black;
+    color: whitesmoke;
+    transition: .5s;
+}
+
+#lower-half{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#lower-half .title{
+    text-align: center;
+    font-size: 4rem;
+}
+
+.game-container{
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.games{
+    background: rgb(160, 85, 48);
+    width: 30vw;
+    height: 50vh;
+    margin: auto;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.game-container a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1rem;
+    width: 30vw;
+}
+
+.games:hover{
+    background: rgb(255, 124, 59);
+    transition: .5s;
+}
+
+.games h1{
+    /* margin: 1rem 0;
+    padding: 1rem 0; */
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: "Kode Mono", monospace;
+}
+
+.games p{
+    margin: 3rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+footer{
+    margin-top: 10rem;
+    width: 100%;
+    background: black;
+    border-top-left-radius: 4rem;
+    border-top-right-radius: 4rem;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+footer h1{
+    margin: 2rem 0 1rem 0;
+}

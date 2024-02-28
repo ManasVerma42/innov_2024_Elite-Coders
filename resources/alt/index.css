@@ -1,0 +1,176 @@
+@import url('https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
+
+html{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    color: black;
+    overflow-x: hidden;
+    background: whitesmoke;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+nav{
+    padding: .5rem 2rem 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+}
+
+.nav-item{
+    padding-right: 2rem;
+}
+
+.nav-right{
+    display: flex;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: black;
+
+}
+.nav-item button{
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 1rem;
+    background: black;
+    padding: .25rem .5rem .25rem .5rem;
+    color: white;
+}
+
+.nav-item button:hover{
+    background: white;
+    color: black;
+    transition: .5s;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.vid .gif{
+    width: 18rem;
+    height: 18rem;
+    border-radius: 18rem;
+    filter: blur(10px);
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+.up{
+    color: black;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.head{
+    font-family: "Anta", sans-serif;
+    font-style: normal;
+    font-size: 5rem;
+    z-index: 1;
+}
+
+.subhead{
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    z-index: 1;
+}
+
+.down{
+    background: black;
+    color: white;
+    height: 55%;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+.down button{
+    cursor: pointer;
+    position: absolute;
+    background: white;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    border-radius: .5rem;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 1rem 0 1rem;
+    border: none;
+}
+
+.down button:hover{
+    background: black;
+    color: white;
+    transition: .5s;
+    letter-spacing: 2px;
+}
+
+#lower-half{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#lower-half .title{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.game-container{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.games{
+    width: 30%;
+    height: 30vh;
+    background: #3772FF;
+    border-radius: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.games a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1rem;
+}
+
+.games h1{
+    margin: 1rem 0 1rem 0;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: "Kode Mono", monospace;
+
+}
+
+footer{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+footer h1{
+    margin: 2rem 0 1rem 0;
+}

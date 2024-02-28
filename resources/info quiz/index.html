@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Quiz App | CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAweome CDN Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <!-- start Quiz button -->
+    
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Some Rules of this Quiz</span></div>
+        <div class="info-list">
+            <div class="info">1. You will have only <span>30 seconds</span> per each question.</div>
+            <div class="info">2. Once you select your answer, it can't be undone.</div>
+            <div class="info">3. You can't select any option once time goes off.</div>
+            <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+            <div class="info">5. You'll get points on the basis of your correct answers.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Awesome Quiz Application</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">30</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Here I've inserted question from JavaScript -->
+            </div>
+            <div class="option_list">
+                <!-- Here I've inserted options from JavaScript -->
+            </div>
+        </section>
+                <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
+            <button class="next_btn">Next Que</button>
+        </footer>
+    </div>
+    
+    
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="ri-vip-crown-line"></i>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay</button>
+            <button class="report" onclick="showPopup()">Analysis</button>
+            <button class="quit">Quit</button>
+        </div>
+    </div>
+
+
+    <div id = "popup" class="popup">
+        <h2>Answers and Explanation</h2>
+        <p>1. John received a job offer with a starting salary of $60,000 per year. His employer offers a 401(k) retirement plan with a 3% employer match. If John contributes 6% of his salary to his 401(k), how much will his employer contribute annually?
+            <br> 
+            Answer: $2,400
+            <br>
+            Explanation: John's employer matches 3% of his salary, which amounts to 3% of $60,000, or $1,800. Since John contributes 6% of his salary, his employer's match is $1,800 * 2 = $3,600 annually. Therefore, the correct answer is $2,400 annually.
+            <br>
+            2. Emily is considering trading stocks actively in the market. Which of the following factors should she consider before engaging in active trading?
+            <br>
+            Answer: All of the above
+            <br>
+            Explanation: Before engaging in active trading, Emily should consider a combination of factors including historical stock prices to identify patterns, market trends and news to understand market sentiment, and company fundamentals to assess the underlying value of the stocks she intends to trade.
+            <br>
+            3. Tom is comparing two mutual funds for his retirement savings. Fund A has an expense ratio of 0.5%, while Fund B has an expense ratio of 1.0%. All other factors being equal, which fund is likely to result in higher net returns for Tom over time?
+            <br>
+            Answer: Fund A
+            <br>
+            Explanation: The expense ratio represents the annual fees charged by the mutual fund to cover operating expenses. A lower expense ratio means less money is deducted from the fund's returns each year, allowing more of the investment's earnings to compound over time. Therefore, Fund A with the lower expense ratio is likely to result in higher net returns for Tom over time.
+            <br>
+            4. Sarah is comparing two credit card offers. Card A has an annual fee of $50 and an interest rate of 15%, while Card B has no annual fee and an interest rate of 18%. Sarah typically carries a balance on her credit card. Which card would likely be the better choice for her?
+            <br>
+            Answer: Card B
+            <br>
+            Explanation: Since Sarah typically carries a balance, the lower interest rate on Card B would save her more money in interest charges over time, even though it has a higher interest rate than Card A. Additionally, since Sarah carries a balance, the absence of an annual fee on Card B is advantageous.
+            <br>
+            5. Julia is considering trading cryptocurrency. She's aware of the high volatility in the cryptocurrency market and wants to minimize her risk exposure while still participating in potential price movements. What trading strategy could Emily use to achieve this goal?
+            <br>
+            Answer: Hedging
+            <br>
+            Explanation: Hedging involves using financial instruments or strategies to offset the risk of adverse price movements in an asset. Emily could hedge her cryptocurrency positions by using options contracts or futures contracts to protect against potential losses from market volatility.
+        </p>
+        <button onclick="closePopup()">Close</button> 
+    </div>
+
+
+
+    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+    <script src="questions.js"></script> 
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="script.js"></script>
+</body>
+</html>

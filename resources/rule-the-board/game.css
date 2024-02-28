@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #7c1c0c;
+}
+.containergame {
+  display: flex;
+  width: 100%;
+  text-align: center;
+}
+img {
+  width: 3rem;
+  height: 3rem;
+}
+.game {
+  /* max-width: fit-content; */
+  width: 70%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-rows: 1fr 2fr 2fr 1fr;
+}
+.box {
+  text-align: center;
+
+  border: 1px solid #7c1c0c;
+}
+.box_content {
+  text-align: center;
+  transform: translateY(50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#sit1,
+#sit13 {
+  background-color: #ff7b00;
+}
+#sit2,
+#sit12 {
+  background-color: #ff8800;
+}
+#sit3,
+#sit11 {
+  background-color: #ff9500;
+}
+#sit4,
+#sit10 {
+  background-color: #ffaa00;
+}
+#sit5,
+#sit9 {
+  background-color: #ffc300;
+}
+#sit8,
+#sit7 {
+  background-color: #ffd000;
+}
+#sit6 {
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+}
+#opt1,
+#opt2,
+#opt3 {
+  width: 6rem;
+  height: 2rem;
+  border: none;
+  border-radius: 20px;
+  border: 2px solid #7c1c0c;
+  transition: 0.5s;
+}
+#opt1:hover,
+#opt2:hover,
+#opt3:hover {
+  transform: scale(1.2);
+  background-color: #7c1c0c;
+  color: ghostwhite;
+}
+.inc_statement {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+h1 {
+  font-size: 2.2rem;
+}
+.ins_block {
+  width: 70%;
+  height: 30%;
+  margin-top: 5rem;
+}
+.ins_block,
+.asset_block,
+.liab_block {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 26px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  background-color: #fbfbff;
+  border: 0.1px solid #040f16;
+  border-radius: 20px;
+  padding: 0.2rem;
+  text-wrap: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ass_liab {
+  margin-top: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+.asset_block,
+.liab_block {
+  width: 19rem;
+  height: 10rem;
+}
+.content_div {
+  margin: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+.content_div1,
+.content_div2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 1rem;
+  font-size: 1rem;
+}
+.create-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+.create-modal-content {
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: #ad522e;
+  padding: 5px 40px;
+  width: 40vw;
+  height: 40vh;
+  /* background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  /*  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;  */ /* Could be more or less, depending on screen size */
+}
+
+#createmodal-inp-text {
+  margin-top: 30px;
+  width: 100%;
+  height: 2.3rem;
+  border: none;
+  padding-left: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  color: rgb(160, 57, 57);
+}
+#createmodal-savebtn,
+.createmodal-cancel {
+  background-color: white;
+  height: 3rem;
+  width: 5rem;
+  top: 150px;
+  border: none;
+  border-radius: 20px;
+  font-weight: 400;
+  position: absolute;
+}
+#createmodal-savebtn {
+  right: 140px;
+}
+.createmodal-cancel {
+  right: 30px;
+}
+::placeholder {
+  font-weight: 500;
+  color: #a1402f;
+}
+.goti {
+  display: none;
+}
+#goti1 {
+  display: block;
+}
+#congoBox {
+  display: none;
+  border-radius: 1rem;
+  max-width: 100%;
+  min-height: 100%;
+}
+#congoBox h1 {
+  text-align: center;
+  margin-top: 6rem;
+}

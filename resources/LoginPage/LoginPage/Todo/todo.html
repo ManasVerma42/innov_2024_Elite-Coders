@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>
+            ARRAYS
+        </title>
+        <link rel="stylesheet" href="arrays-todo-list.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <p>TODO List</p>
+        <div class="todo-input">
+            <input class="js-todo-input name-input" type="text" placeholder="Add Task">
+            <input type="date" class="js-date date-input">
+            <button class="add-button" onclick="
+                addTodo();
+            ">Add</button>
+        </div>
+    <div class="js-show-tasks todo-grid"></div>
+        <script module src="arrays.js"></script>
+    </body>
+</html>

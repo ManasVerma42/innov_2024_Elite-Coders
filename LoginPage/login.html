@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./sass/style.css">
+        <script defer src="./js/login.js"></script>
+    </head>
+    <body class="login">
+        <div class="container">
+            <h2 class="text-center">LOGIN</h2>
+            <br>
+            <form action="dashboard.html" class="login-form">
+                <div class="error-message-all"></div>
+                <div class="input-group">
+                    <label for="username" class="label">Username</label>
+                    <input type="text" class="input" id="username">
+                    <span class="error-message"></span>
+                </div>
+                <br>
+                <div class="input-group">
+                    <label for="password" class="label">Password</label>
+                    <input type="password" class="input" id="password">
+                    <span class="error-message"></span>
+                </div>
+                <br>
+                <button class="button" type="submit">LOGIN</button> <br>
+            </form>
+            <button class="signup-button" onclick="signUp()">Not a user? SIGNUP</button>
+        </div>
+        
+        <script src="" async defer></script>
+        <script src="./js/node_modules/axios/dist/axios.min.js"></script>
+        <script src="./js/signupbutton.js"></script>
+    </body>
+</html>

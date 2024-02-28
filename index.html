@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forge Finance</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
+    <link rel="icon" href="./img/logo.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/chatbot.css">
+    <script src ="./js/chatbot.js" defer></script>
+
+</head>
+<body class="body">
+
+    <header class="header">
+
+        <img class="bg-img" src="./img/city-landscape2.jpg" alt="img">
+
+        <nav>
+            <div class="logo"><a href="./index.html"><img src="./img/logo.png" alt="logo"></a></div>
+            <div class="nav-right">
+                <div class="nav-item">
+                    <a href="#">Community</a>
+                    <a href="./LoginPage/login.html"><button>Log in</button></a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="hero-container">
+            <div class="hero hero-img1" >
+                <img src="./img/luigi.png" alt="image2">
+            </div>
+            <div class="hero">
+                <h1>Forge Finance</h1>
+                <p class="hero-tagline">Game On for Financial Fluency</p>
+                <p class="hero-info">An interactive web game designed to boost financial literacy. Dive into engaging gameplay covering budgeting, saving, investing, and debt management. Track progress, share insights, and connect with a supportive community. With customizable options and accessibility across devices, FinanceFusion empowers users to take control of their financial future.</p>
+                <div class="btns">
+                    <a href="#">
+                        <button class="learn-more" onclick="showPopup()">Learn More!</button></a>
+                    <a href="#lower-half">
+                        <button class="begin">Let's Begin!</button></a>
+                </div>
+            </div>
+            <div class="hero hero-img2" >
+                <img src="./img/mario.png" alt="image2">
+            </div>
+        </div>
+
+    </header>
+
+    <!-- Popup Content -->
+    <div id="popup" class="popup">
+        <h2>Learning Guide</h2>
+        <video src="./img/quick-guide.mp4" autoplay controls type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        <button onclick="closePopup()">Close</button>
+    </div>
+    
+
+    <!-- Overlay -->
+    <div id="overlay" class="overlay"></div>
+
+    <section id="lower-half">
+        <h1 class="title">Choose a Game :</h1>
+        <div class="game-container">
+            <a href="./memory-game/memory-game.html" target="_blank"><div class="games">
+                <h1>Memory Puzzle</h1>
+                <p>A web-based memory puzzle game that educates users about personal finance through matching financial concepts while enhancing memory skills.</p>
+            </div></a>
+            <a href="./quiz-showdown/quiz-showdown.html" target="_blank"><div class="games">
+                <h1>Quiz Showdown</h1>
+                <p>Test your financial knowledge and learn key personal finance concepts through engaging quizzes and simulations.</p>
+            </div></a>
+            <a href="./rule-the-board/game.html" target="_blank"><div class="games">
+                <h1>Rule the Board!</h1>
+                <p>Make real-time decisions on budgeting, saving, investing, and debt management to level up your money skills!</p>
+            </div></a>
+        </div>
+    </section>
+
+    <footer>
+        <p class="rights">&copy; 2024 Elite_Coders. All Rights Reserved.</p>
+    </footer>
+
+    <!-- ChatBot -->
+
+    <button class="chatbot-toggler"> 
+        <span class = material-symbols-outlined><i class="ri-chat-4-line"></i></span> 
+        <span class = material-symbols-outlined><i class="ri-close-line"></i></span>     
+    </button>
+    <div class="chatbot">
+        <header class="chatbot-header">
+            <h2>Chat With Us</h2>
+            <span class = "close-btn material-symbols-outlined"><i class="ri-robot-3-line"></i></span>   
+        </header>
+        <ul class="chatbox">
+            <li class="chat incoming">
+                <span class = "material-symbols-outlined"> <i class="ri-robot-2-line"></i></span>
+                <p>Hi there 👋🏻 <br> How can I help you today?</p>
+            </li>
+        
+        </ul>
+        <div class="chat-input">
+            <textarea placeholder="Enter a message..." required></textarea>
+            <span id="send-btn" class = material-symbols-outlined><i class="ri-send-plane-2-line"></i></span>
+        </div>
+    </div>
+
+ <!-- end -->
+    <script>
+        function showPopup() {
+            document.getElementById("popup").style.display = "flex";
+            document.getElementById("overlay").style.display = "block";
+        }
+    
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>
+    
+
+</body>
+</html>
