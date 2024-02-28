@@ -90,8 +90,9 @@ button {
     user-select: none;
     text-align: center;
     background: #eeb264;
-    color: white;
+    color: #71140b;
     font-size: 20px;
+    font-weight: 300;
     word-wrap: break-word;
     display: flex;
     flex-wrap: wrap;

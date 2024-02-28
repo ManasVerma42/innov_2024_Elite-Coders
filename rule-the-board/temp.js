@@ -323,7 +323,12 @@ function callNext(i) {
 
     document.getElementById("opt1").innerText = "";
     document.getElementById("congoBox").style.display = "block";
-  }
+  
+    document.getElementById("#opt1").style.display = "none";
+    document.getElementById("#opt2").style.display = "none";
+    document.getElementById("#opt3").style.display = "none";}
+
+    
 
   // Show the next element
   document.getElementById(`goti${i + 1}`).style.display = "block";
