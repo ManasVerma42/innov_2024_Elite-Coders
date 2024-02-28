@@ -4,8 +4,8 @@
   padding: 0;
   margin: 0;
   font-family: Poppins;
+  font-size: 1.1rem;
   font-weight: 600;
-  font-size: 1rem;
   color: #7c1c0c;
 }
 .containergame {
@@ -129,8 +129,7 @@ h1 {
 }
 .asset_block,
 .liab_block {
-  width: 19rem;
-  height: 10rem;
+  justify-content: space-around;
 }
 .content_div {
   margin: 2rem;
@@ -147,7 +146,11 @@ h1 {
   justify-content: center;
   margin-top: 2rem;
   gap: 1rem;
-  font-size: 1rem;
+}
+
+.labels, .values{
+  font-size: .7rem;
+  padding: 0 1rem;
 }
 .create-modal {
   display: none; /* Hidden by default */

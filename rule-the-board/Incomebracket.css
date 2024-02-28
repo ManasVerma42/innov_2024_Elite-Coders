@@ -28,8 +28,9 @@
 }
 #getStarted {
   border-radius: 20px;
+  position: relative;
   font-size: 2rem;
-  margin-top: 7rem;
+  top: 13rem;
   width: 14rem;
   height: 4rem;
   background-color: ghostwhite;

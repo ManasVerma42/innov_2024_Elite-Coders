@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+ @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   box-sizing: border-box;
   padding: 0;
@@ -25,9 +25,11 @@
   padding: 3rem;
   text-align: center;
   border-radius: 10px;
+  font-size: 1.8rem;
 }
 h3 {
   margin-top: 0.2rem;
+  font-size: 30px;
 }
 .buttons {
   display: flex;
@@ -35,10 +37,15 @@ h3 {
   gap: 2rem;
   margin-top: 2rem;
 }
+
+.para{
+  font-size: 40px;
+}
+
 #start_btn,
 #back_btn {
-  width: 5rem;
-  height: 2rem;
+  width: 9rem;
+  height: 4rem;
   border-radius: 10px;
   text-align: center;
   background-color: rgb(129, 233, 129);
@@ -46,6 +53,8 @@ h3 {
   color: rgb(7, 53, 7);
   font-size: large;
   transition: 0.5s;
+  
+  font-size: 1.8rem;
 }
 #start_btn:hover,
 #back_btn:hover {

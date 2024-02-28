@@ -226,4 +226,10 @@ h1 {
 #congoBox h1 {
   text-align: center;
   margin-top: 6rem;
-}
+} /* 
+#conf {
+  display: none;
+  border-radius: 1rem;
+  max-width: 100%;
+  min-height: 100%;
+} */

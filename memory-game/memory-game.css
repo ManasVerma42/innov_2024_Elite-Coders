@@ -41,6 +41,7 @@ button {
 }
 .board-container {
     position: relative;
+
 }
 .board,
 .win {
@@ -68,8 +69,8 @@ button {
 }
 .card {
     position: relative;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     cursor: pointer;
 }
 .card-front,
@@ -90,7 +91,7 @@ button {
     text-align: center;
     background: #eeb264;
     color: white;
-    font-size: 11px;
+    font-size: 20px;
     word-wrap: break-word;
     display: flex;
     flex-wrap: wrap;

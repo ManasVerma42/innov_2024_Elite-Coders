@@ -1,6 +1,6 @@
 var mathValue = Math.random();
 console.log(mathValue);
-var flag;
+var flag, urlIdentifier;
 if (mathValue <= 1 / 3) flag = 0; //high
 else if (mathValue > 1 / 3 && mathValue <= 2 / 3) flag = 1;
 else flag = 2;
@@ -21,6 +21,7 @@ function setIncome(flag) {
   };
   var inc_brac = "";
   if (flag == 0) {
+    urlIdentifier = "gamehigh";
     income = 150000;
     expense = 100000;
     payday = income - expense;
@@ -34,6 +35,7 @@ function setIncome(flag) {
     inc_brac = "HIGH Income Bracket";
     console.log(assets, liabs);
   } else if (flag == 1) {
+    urlIdentifier = "game";
     income = 65000;
     expense = 40000;
     payday = income - expense;
@@ -46,6 +48,7 @@ function setIncome(flag) {
     liabs.otherliab = 200000;
     inc_brac = "MID Income Bracket";
   } else {
+    urlIdentifier = "gamelow";
     income = 30000;
     expense = 21000;
     payday = income - expense;
@@ -112,7 +115,7 @@ function displayIncome(income, expense, payday, assets, liabs, inc_brac) {
       <a href="Incomebracket.html"><input type="button" id="back_btn" value="Back"/></a>
 
           
-      <a href="game.html"><input type="button" id="start_btn" value="Start"/></a>
+      <a href="${urlIdentifier}.html"><input type="button" id="start_btn" value="Start"/></a>
 
        </div>
           </div>  `;

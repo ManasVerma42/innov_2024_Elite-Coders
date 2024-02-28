@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rule the Board</title>
+    <link rel="icon" href="../img/logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="game.css" />
+  </head>
+  <body>
+    <div class="containergame">
+      <div class="game">
+        <div class="box" id="sit1">
+          <div class="box_content">
+            <img class="goti" id="goti1" src="icons/coin.png" alt="" />
+          </div>
+        </div>
+        <div class="box" id="sit2">
+          <div class="box_content">
+            <img class="goti" id="goti2" src="icons/coin.png" alt="" />
+          </div>
+        </div>
+        <div class="box" id="sit3">
+          <div class="box_content">
+            <img class="goti" id="goti3" src="icons/coin.png" alt="" />
+          </div>
+        </div>
+        <div class="box" id="sit4">
+          <div class="box_content">
+            <img class="goti" id="goti4" src="icons/coin.png" alt="" />
+          </div>
+        </div>
+        <div class="box" id="sit5">
+          <div class="box_content">
+            <img class="goti" id="goti12" src="icons/coin.png" alt="" />
+          </div>
+        </div>
+        <div class="box" id="sit6">
+          <p id="situation_statement">
+            Upon waking up, you discover the fridge has ceased functioning,
+            leaving your food at risk of spoiling.<br />The repair cost would be
+            around Rs. 5000<br /><br />What will you do?
+          </p>
+          <div id="congoBox" class="congo-modal">
+            <div class="create-modal-content">
+              <h1>Congratulations!!!</h1>
+              
+            </div>
+          </div>
+          <div class="buttons">
+            <button class="options" id="opt1" onclick="updateCost(1)">
+              Repair
+            </button>
+            <button class="options" id="opt2" onclick="updateCost(2)">
+              Pass
+            </button>
+            <button class="options" id="opt3">Borrow</button>
+          </div>
+        </div>
+        <div class="box" id="sit7">
+          <div class="box_content">
+            <img class="goti" id="goti5" src="icons/coin.png" alt="" />
+          </div>
+        </div>
+        <div class="box" id="sit8">
+          <div class="box_content">
+            <img class="goti" id="goti11" src="icons/coin.png" alt="" />
+          </div>
+        </div>
+        <div class="box" id="sit9">
+          <div class="box_content">
+            <img class="goti" id="goti6" src="icons/coin.png" alt="" />
+          </div>
+        </div>
+        <div class="box" id="sit10">
+          <div class="box_content">
+            <img class="goti" id="goti10" src="icons/coin.png" alt="" />
+          </div>
+        </div>
+        <div class="box" id="sit11">
+          <div class="box_content">
+            <img class="goti" id="goti9" src="icons/coin.png" alt="" />
+          </div>
+        </div>
+        <div class="box" id="sit12">
+          <div class="box_content">
+            <img class="goti" id="goti8" src="icons/coin.png" alt="" />
+          </div>
+        </div>
+        <div class="box" id="sit13">
+          <div class="box_content">
+            <img class="goti" id="goti7" src="icons/coin.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="inc_statement">
+        <h1>Income Statement</h1>
+        <div class="ins_block">
+          <h3>Income</h3>
+          <div class="content_div">
+            <div class="labels">
+              <div id="label1">Income</div>
+              <div id="label2">Expenses</div>
+              <div id="label2">PayDay</div>
+            </div>
+            <div class="values">
+              <div id="val1">30000</div>
+              <div id="val2">21000</div>
+              <div id="val3">9000</div>
+            </div>
+          </div>
+        </div>
+        <div class="ass_liab">
+          <div class="asset_block">
+            <h3>Assets</h3>
+            <div class="content_div1">
+              <div class="labels">
+                <div id="ass_label1">Property</div>
+                <div id="ass_label2">Vehicles</div>
+                <div id="ass_label3">Other</div>
+              </div>
+              <div class="values">
+                <div id="ass_val1">0</div>
+                <div id="ass_val2">0</div>
+                <div id="ass_val3">15000</div>
+              </div>
+            </div>
+          </div>
+          <div class="liab_block">
+            <h3>Liabilities</h3>
+            <div class="content_div2">
+              <div class="labels">
+                <div id="liab_label1">Mortgage</div>
+                <div id="liab_label2">Loans</div>
+                <div id="liab_label3">Other</div>
+              </div>
+              <div class="values">
+                <div id="liab_val1">0</div>
+                <div id="liab_val2">300000</div>
+                <div id="liab_val3">60000</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="createModal" class="create-modal">
+          <div class="create-modal-content">
+            <input
+              type="text"
+              id="createmodal-inp-text"
+              placeholder="Amount of money to borrow"
+            />
+
+            <button id="createmodal-savebtn" onclick="updateCost(3)">
+              Save
+            </button>
+            <button class="createmodal-cancel">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--     <img src="icons/confetti.gif" id="conf">
+ -->    
+  </div>
+    <script src="temp.js"></script>
+  </body>
+</html>

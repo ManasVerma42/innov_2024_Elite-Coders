@@ -322,7 +322,8 @@ function callNext(i) {
     document.getElementById("opt3").innerText = "";
 
     document.getElementById("opt1").innerText = "";
-    document.getElementById("congoBox").style.display = "block";
+    document.getElementById("congoBox").style.display = "block"; /* 
+    document.getElementById("conf").style.display = "block"; */
   }
 
   // Show the next element
