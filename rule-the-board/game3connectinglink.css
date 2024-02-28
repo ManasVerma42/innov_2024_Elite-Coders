@@ -17,7 +17,7 @@
   background-color: #fbfbff; /* 
   background-color: rgba(251, 251, 255, 0.2); */
   /* background: linear-gradient(135deg, white, black); */
-
+font-size: 1.6rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -25,7 +25,6 @@
   padding: 3rem;
   text-align: center;
   border-radius: 10px;
-  font-size: 1.8rem;
 }
 h3 {
   margin-top: 0.2rem;
@@ -38,9 +37,6 @@ h3 {
   margin-top: 2rem;
 }
 
-.para{
-  font-size: 40px;
-}
 
 #start_btn,
 #back_btn {
